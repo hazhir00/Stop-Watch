@@ -1,0 +1,121 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* _______________________________________________________________ */
+
+/* Resets */
+/* 1. Use a more-intuitive box-sizing model 
+    2. Remove default margin
+    3. Remove default Padding*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 4.Setting Page's Font */
+body {
+    font-family: "Courier Prime", sans-serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+/* _______________________________________________________________ */
+
+/* Variables */
+:root {
+    /* Color Theme */
+
+    /* Typography */
+
+    /* Spacing */
+}
+/* _______________________________________________________________ */
+/* !Main CSS */
+body {
+    background: #edeaff;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch {
+    width: min(90%, 35em);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(Images/background.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 3em 0;
+    color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stopwatch h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0.5em auto 0.5em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons img {
+    width: 4em;
+    margin: 0 1.25em;
+    cursor: pointer;
+}
+
+.buttons img:nth-child(2) {
+    width: 6em;
+}
+/* _______________________________________________________________ */
+/* Media Queries */
+@media() {
+}
+/* _______________________________________________________________ */

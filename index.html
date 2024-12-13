@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="Hazhir Naseri" />
+        <!-- Links -->
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- Fav Icon -->
+        <link
+            rel="shortcut icon"
+            href="images/fav-icon.png"
+            type="image/x-icon"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        />
+        <!-- Title -->
+        <title>Stop Watch</title>
+    </head>
+    <body>
+        <div class="stopwatch">
+            <h1 id="displayTime">00:00:00</h1>
+            <div class="buttons">
+                <img
+                    src="Images/stop.png"
+                    alt="Stop Button"
+                    onclick="watchStop()"
+                />
+                <img
+                    src="Images/start.png"
+                    alt="Start Button"
+                    onclick="watchStart()"
+                />
+                <img
+                    src="Images/reset.png"
+                    alt="Reset Button"
+                    onclick="watchReset()"
+                />
+            </div>
+        </div>
+        <!-- !Main Content -->
+        <!-- Script Tag -->
+        <script src="script.js"></script>
+    </body>
+</html>
